@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.22" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.6.2.r262_v20110209 Build &lt;2.6.2.v20110214-1523></property>
+    <simple-property-list name="includeResource">
+        <value>DetailDocumentExecution</value>
+    </simple-property-list>
+    <property name="units">in</property>
+    <list-property name="propertyBindings">
+        <structure>
+            <property name="name">odaJndiName</property>
+            <property name="id">7</property>
+            <expression name="value" type="javascript">params["connectionName"].value</expression>
+        </structure>
+        <structure>
+            <property name="name">odaDriverClass</property>
+            <property name="id">7</property>
+        </structure>
+        <structure>
+            <property name="name">odaURL</property>
+            <property name="id">7</property>
+        </structure>
+        <structure>
+            <property name="name">odaUser</property>
+            <property name="id">7</property>
+        </structure>
+        <structure>
+            <property name="name">odaAutoCommit</property>
+            <property name="id">7</property>
+        </structure>
+        <structure>
+            <property name="name">odaIsolationMode</property>
+            <property name="id">7</property>
+        </structure>
+        <structure>
+            <property name="name">odaPassword</property>
+            <property name="id">7</property>
+        </structure>
+        <structure>
+            <property name="name">OdaConnProfileName</property>
+            <property name="id">7</property>
+        </structure>
+        <structure>
+            <property name="name">OdaConnProfileStorePath</property>
+            <property name="id">7</property>
+        </structure>
+    </list-property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">98</property>
+    <parameters>
+        <scalar-parameter name="DataFrom" id="2585">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="UserName" id="2587">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="DocumentType" id="2588">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="DocumentName" id="2589">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="connectionName" id="2239">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="DataTo" id="2759">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="ENEL COLLAUDO" id="7">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">oracle.jdbc.driver.OracleDriver</property>
+            <property name="odaURL">jdbc:oracle:thin:@//10.10.43.38/MMUT1C</property>
+            <property name="odaUser">USRMUTI</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">dXNybXV0aSQx</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Table" id="2590">
+            <property name="nullsOrdering">nulls lowest</property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">DOCNAME</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">ID</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">DOCLABEL</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">USERNAME</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">EXECDATA</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">EXECTIME</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <method name="beforeOpen"><![CDATA[var condition =""; 
+
+if (params["UserName"].value) {
+	condition = " and USERNAME like '"+ params["UserName"].value+"'";
+	this.queryText = this.queryText.replace("USERNAME_PH", condition);
+} else
+	this.queryText = this.queryText.replace("USERNAME_PH", "");
+	
+if (params["DocumentType"].value) {
+	condition = " and DOC_TYPE like '"+ params["DocumentType"].value+"'";
+	this.queryText = this.queryText.replace("DOCUM_TYPE", condition);
+} else
+	this.queryText = this.queryText.replace("DOCUM_TYPE", "");
+	
+if (params["DocumentName"].value) {
+	condition = " and DOC_NAME = '"+ params["DocumentName"].value+"'";
+	this.queryText = this.queryText.replace("DOCUM_NAME", condition);
+} else
+	this.queryText = this.queryText.replace("DOCUM_NAME", "");
+
+if (params["DataTo"].value) {
+	condition = " EXECUTION_START >= to_date('"+params["DataFrom"].value+"','dd/mm/YYYY')  and EXECUTION_START <= TO_date('"+params["DataTo"].value+"','dd/mm/YYYY')";
+	this.queryText = this.queryText.replace("DATE_PH", condition);
+} else
+	this.queryText = this.queryText.replace("DATE_PH", " EXECUTION_START = to_date('"+params["DataFrom"].value+"','dd/mm/YYYY')");
+	]]></method>
+            <property name="dataSource">ENEL COLLAUDO</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">DOCNAME</property>
+                    <property name="nativeName">DOCNAME</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">ID</property>
+                    <property name="nativeName">ID</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">DOCLABEL</property>
+                    <property name="nativeName">DOCLABEL</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">USERNAME</property>
+                    <property name="nativeName">USERNAME</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">EXECDATA</property>
+                    <property name="nativeName">EXECDATA</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">EXECTIME</property>
+                    <property name="nativeName">EXECTIME</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select 	DOC_NAME as DocName,
+		ID as ID,
+		DOC_LABEL as DocLabel,
+		USERNAME as UserName,
+		to_char(EXECUTION_START,'dd/mm/YYYY HH24:mi:ss') as execData,
+		EXECUTION_TIME as execTime
+from spagobi.SBI_AUDIT
+where
+	DATE_PH
+	USERNAME_PH
+	DOCUM_TYPE
+	DOCUM_NAME
+Group BY ID, DOC_NAME, DOC_LABEL,USERNAME, EXECUTION_START, EXECUTION_TIME]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Data</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>Data</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Data</design:label>
+            <design:formattingHints>
+              <design:displaySize>10</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DOCNAME</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>8</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>DOCNAME</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DOCNAME</design:label>
+            <design:formattingHints>
+              <design:displaySize>8</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>USERNAME</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>8</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>USERNAME</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>USERNAME</design:label>
+            <design:formattingHints>
+              <design:displaySize>8</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>numExec</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>-5</design:nativeDataTypeCode>
+            <design:precision>20</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>numExec</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>numExec</design:label>
+            <design:formattingHints>
+              <design:displaySize>20</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="type">a4</property>
+            <property name="orientation">portrait</property>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <grid id="250">
+            <column id="319">
+                <property name="width">5%</property>
+            </column>
+            <column id="251">
+                <property name="width">90%</property>
+            </column>
+            <column id="317">
+                <property name="width">5%</property>
+            </column>
+            <row id="320">
+                <cell id="321"/>
+                <cell id="322">
+                    <property name="backgroundAttachment">scroll</property>
+                    <property name="backgroundImageType">url</property>
+                    <property name="backgroundPositionX">0%</property>
+                    <property name="backgroundPositionY">0%</property>
+                    <property name="backgroundRepeat">repeat</property>
+                    <property name="backgroundSizeHeight">auto</property>
+                    <property name="backgroundSizeWidth">auto</property>
+                    <property name="fontFamily">sans-serif</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">normal</property>
+                    <property name="fontStyle">normal</property>
+                    <property name="fontVariant">normal</property>
+                    <property name="color">black</property>
+                    <property name="textLineThrough">none</property>
+                    <property name="textOverline">none</property>
+                    <property name="textUnderline">none</property>
+                    <property name="borderBottomColor">#000040</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">2px</property>
+                    <property name="borderLeftColor">black</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderRightColor">black</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopColor">black</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="marginTop">0pt</property>
+                    <property name="marginLeft">0pt</property>
+                    <property name="marginBottom">0pt</property>
+                    <property name="marginRight">0pt</property>
+                    <property name="paddingTop">1pt</property>
+                    <property name="paddingLeft">1pt</property>
+                    <property name="paddingBottom">1pt</property>
+                    <property name="paddingRight">1pt</property>
+                    <property name="textIndent">0em</property>
+                    <property name="letterSpacing">normal</property>
+                    <property name="lineHeight">normal</property>
+                    <property name="orphans">2</property>
+                    <property name="textTransform">none</property>
+                    <property name="whiteSpace">normal</property>
+                    <property name="widows">2</property>
+                    <property name="wordSpacing">normal</property>
+                    <property name="display">block</property>
+                    <property name="pageBreakAfter">auto</property>
+                    <property name="pageBreakBefore">auto</property>
+                    <property name="pageBreakInside">auto</property>
+                    <property name="showIfBlank">false</property>
+                    <property name="canShrink">false</property>
+                    <property name="overflow">hidden</property>
+                    <label id="245">
+                        <property name="backgroundColor">#DBDBDB</property>
+                        <property name="fontFamily">"DejaVu Sans"</property>
+                        <property name="fontSize">x-large</property>
+                        <property name="fontWeight">bold</property>
+                        <property name="color">#000040</property>
+                        <property name="textUnderline">none</property>
+                        <property name="marginTop">3mm</property>
+                        <property name="textAlign">center</property>
+                        <text-property name="text" key="Titolo">Document Execution List</text-property>
+                    </label>
+                </cell>
+                <cell id="323"/>
+            </row>
+            <row id="324">
+                <cell id="325"/>
+                <cell id="326">
+                    <grid id="2760">
+                        <column id="2761">
+                            <property name="width">25%</property>
+                        </column>
+                        <column id="2762">
+                            <property name="width">25%</property>
+                        </column>
+                        <column id="2763">
+                            <property name="width">25%</property>
+                        </column>
+                        <column id="2764">
+                            <property name="width">25%</property>
+                        </column>
+                        <row id="2765">
+                            <cell id="2766"/>
+                            <cell id="2767">
+                                <label id="304">
+                                    <property name="backgroundAttachment">scroll</property>
+                                    <property name="backgroundColor">#F1F4FB</property>
+                                    <property name="backgroundPositionX">0%</property>
+                                    <property name="backgroundPositionY">0%</property>
+                                    <property name="backgroundRepeat">repeat</property>
+                                    <property name="fontFamily">"Calibri"</property>
+                                    <property name="fontSize">9pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="fontVariant">normal</property>
+                                    <property name="color">#000040</property>
+                                    <property name="textLineThrough">none</property>
+                                    <property name="textOverline">none</property>
+                                    <property name="textUnderline">none</property>
+                                    <property name="borderBottomColor">black</property>
+                                    <property name="borderBottomStyle">none</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftColor">black</property>
+                                    <property name="borderLeftStyle">none</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightColor">black</property>
+                                    <property name="borderRightStyle">none</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopColor">black</property>
+                                    <property name="borderTopStyle">none</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="marginTop">0pt</property>
+                                    <property name="marginLeft">0pt</property>
+                                    <property name="marginBottom">0pt</property>
+                                    <property name="marginRight">0pt</property>
+                                    <property name="paddingTop">1pt</property>
+                                    <property name="paddingLeft">1pt</property>
+                                    <property name="paddingBottom">1pt</property>
+                                    <property name="paddingRight">1pt</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="letterSpacing">normal</property>
+                                    <property name="lineHeight">normal</property>
+                                    <property name="orphans">2</property>
+                                    <property name="textTransform">none</property>
+                                    <property name="whiteSpace">normal</property>
+                                    <property name="widows">2</property>
+                                    <property name="wordSpacing">normal</property>
+                                    <property name="display">block</property>
+                                    <property name="pageBreakAfter">auto</property>
+                                    <property name="pageBreakBefore">auto</property>
+                                    <property name="pageBreakInside">auto</property>
+                                    <property name="showIfBlank">false</property>
+                                    <property name="canShrink">false</property>
+                                    <property name="overflow">hidden</property>
+                                    <text-property name="text" key="DocumentName">Nome documento:</text-property>
+                                </label>
+                            </cell>
+                            <cell id="2768">
+                                <data id="2779">
+                                    <property name="fontSize">9pt</property>
+                                    <property name="color">gray</property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">DocumentName</property>
+                                            <expression name="expression" type="javascript">params["DocumentName"]</expression>
+                                            <property name="dataType">string</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="resultSetColumn">DocumentName</property>
+                                </data>
+                            </cell>
+                            <cell id="2769"/>
+                        </row>
+                        <row id="2771">
+                            <cell id="2772"/>
+                            <cell id="2773">
+                                <label id="2776">
+                                    <property name="backgroundAttachment">scroll</property>
+                                    <property name="backgroundColor">#F1F4FB</property>
+                                    <property name="backgroundPositionX">0%</property>
+                                    <property name="backgroundPositionY">0%</property>
+                                    <property name="backgroundRepeat">repeat</property>
+                                    <property name="fontFamily">"Calibri"</property>
+                                    <property name="fontSize">9pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="fontVariant">normal</property>
+                                    <property name="color">#000040</property>
+                                    <property name="textLineThrough">none</property>
+                                    <property name="textOverline">none</property>
+                                    <property name="textUnderline">none</property>
+                                    <property name="borderBottomColor">black</property>
+                                    <property name="borderBottomStyle">none</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftColor">black</property>
+                                    <property name="borderLeftStyle">none</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightColor">black</property>
+                                    <property name="borderRightStyle">none</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopColor">black</property>
+                                    <property name="borderTopStyle">none</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="marginTop">0pt</property>
+                                    <property name="marginLeft">0pt</property>
+                                    <property name="marginBottom">0pt</property>
+                                    <property name="marginRight">0pt</property>
+                                    <property name="paddingTop">1pt</property>
+                                    <property name="paddingLeft">1pt</property>
+                                    <property name="paddingBottom">1pt</property>
+                                    <property name="paddingRight">1pt</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="letterSpacing">normal</property>
+                                    <property name="lineHeight">normal</property>
+                                    <property name="orphans">2</property>
+                                    <property name="textTransform">none</property>
+                                    <property name="whiteSpace">normal</property>
+                                    <property name="widows">2</property>
+                                    <property name="wordSpacing">normal</property>
+                                    <property name="display">block</property>
+                                    <property name="pageBreakAfter">auto</property>
+                                    <property name="pageBreakBefore">auto</property>
+                                    <property name="pageBreakInside">auto</property>
+                                    <property name="showIfBlank">false</property>
+                                    <property name="canShrink">false</property>
+                                    <property name="overflow">hidden</property>
+                                    <text-property name="text" key="DocumentType">Tipo documento</text-property>
+                                </label>
+                            </cell>
+                            <cell id="2774">
+                                <data id="2777">
+                                    <property name="fontSize">9pt</property>
+                                    <property name="color">gray</property>
+                                    <list-property name="boundDataColumns">
+                                        <structure>
+                                            <property name="name">DocumentType</property>
+                                            <expression name="expression" type="javascript">params["DocumentType"]</expression>
+                                            <property name="dataType">string</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="resultSetColumn">DocumentType</property>
+                                </data>
+                            </cell>
+                            <cell id="2775"/>
+                        </row>
+                    </grid>
+                </cell>
+                <cell id="327"/>
+            </row>
+            <row id="2746">
+                <cell id="2747"/>
+                <cell id="2674">
+                    <table id="2680">
+                        <property name="dataSet">Table</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">DOCNAME</property>
+                                <text-property name="displayName">DOCNAME</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["DOCNAME"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">DOCLABEL</property>
+                                <text-property name="displayName">DOCLABEL</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["DOCLABEL"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">USERNAME</property>
+                                <text-property name="displayName">USERNAME</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["USERNAME"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">EXECDATA</property>
+                                <text-property name="displayName">EXECDATA</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["EXECDATA"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">EXECTIME</property>
+                                <text-property name="displayName">EXECTIME</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["EXECTIME"]</expression>
+                                <property name="dataType">integer</property>
+                            </structure>
+                            <structure>
+                                <property name="name">ID</property>
+                                <text-property name="displayName">ID</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["ID"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                        </list-property>
+                        <column id="2725">
+                            <property name="width">20%</property>
+                        </column>
+                        <column id="2726">
+                            <property name="width">10%</property>
+                        </column>
+                        <column id="2727">
+                            <property name="width">15%</property>
+                        </column>
+                        <column id="2728">
+                            <property name="width">10%</property>
+                        </column>
+                        <header>
+                            <row id="2681">
+                                <property name="height">0.40625in</property>
+                                <property name="verticalAlign">middle</property>
+                                <cell id="2684">
+                                    <property name="backgroundColor">#00006A</property>
+                                    <property name="borderBottomColor">#FFFFFF</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">2px</property>
+                                    <property name="borderLeftColor">#FFFFFF</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">2px</property>
+                                    <property name="borderRightColor">#FFFFFF</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">2px</property>
+                                    <property name="borderTopColor">#FFFFFF</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">2px</property>
+                                    <label id="2685">
+                                        <property name="backgroundAttachment">scroll</property>
+                                        <property name="backgroundColor">#00006A</property>
+                                        <property name="backgroundPositionX">0%</property>
+                                        <property name="backgroundPositionY">0%</property>
+                                        <property name="backgroundRepeat">repeat</property>
+                                        <property name="fontFamily">"Calibri"</property>
+                                        <property name="fontSize">11pt</property>
+                                        <property name="fontWeight">bold</property>
+                                        <property name="fontStyle">normal</property>
+                                        <property name="fontVariant">normal</property>
+                                        <property name="color">#FFFFFF</property>
+                                        <property name="textLineThrough">none</property>
+                                        <property name="textOverline">none</property>
+                                        <property name="textUnderline">none</property>
+                                        <property name="borderBottomColor">black</property>
+                                        <property name="borderBottomStyle">none</property>
+                                        <property name="borderBottomWidth">medium</property>
+                                        <property name="borderLeftColor">black</property>
+                                        <property name="borderLeftStyle">none</property>
+                                        <property name="borderLeftWidth">medium</property>
+                                        <property name="borderRightColor">black</property>
+                                        <property name="borderRightStyle">none</property>
+                                        <property name="borderRightWidth">medium</property>
+                                        <property name="borderTopColor">black</property>
+                                        <property name="borderTopStyle">none</property>
+                                        <property name="borderTopWidth">medium</property>
+                                        <property name="marginTop">0pt</property>
+                                        <property name="marginLeft">0pt</property>
+                                        <property name="marginBottom">0pt</property>
+                                        <property name="marginRight">0pt</property>
+                                        <property name="paddingTop">1pt</property>
+                                        <property name="paddingLeft">1pt</property>
+                                        <property name="paddingBottom">1pt</property>
+                                        <property name="paddingRight">1pt</property>
+                                        <property name="textAlign">center</property>
+                                        <property name="letterSpacing">normal</property>
+                                        <property name="lineHeight">normal</property>
+                                        <property name="orphans">2</property>
+                                        <property name="textTransform">none</property>
+                                        <property name="whiteSpace">normal</property>
+                                        <property name="widows">2</property>
+                                        <property name="wordSpacing">normal</property>
+                                        <property name="display">block</property>
+                                        <property name="pageBreakAfter">auto</property>
+                                        <property name="pageBreakBefore">auto</property>
+                                        <property name="pageBreakInside">auto</property>
+                                        <property name="showIfBlank">false</property>
+                                        <property name="canShrink">false</property>
+                                        <property name="overflow">hidden</property>
+                                        <text-property name="text" key="UserName">User name</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="2686">
+                                    <property name="backgroundColor">#00006A</property>
+                                    <property name="borderBottomColor">#FFFFFF</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">2px</property>
+                                    <property name="borderLeftColor">#FFFFFF</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">2px</property>
+                                    <property name="borderRightColor">#FFFFFF</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">2px</property>
+                                    <property name="borderTopColor">#FFFFFF</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">2px</property>
+                                    <label id="2687">
+                                        <property name="backgroundAttachment">scroll</property>
+                                        <property name="backgroundColor">#00006A</property>
+                                        <property name="backgroundPositionX">0%</property>
+                                        <property name="backgroundPositionY">0%</property>
+                                        <property name="backgroundRepeat">repeat</property>
+                                        <property name="fontFamily">"Calibri"</property>
+                                        <property name="fontSize">11pt</property>
+                                        <property name="fontWeight">bold</property>
+                                        <property name="fontStyle">normal</property>
+                                        <property name="fontVariant">normal</property>
+                                        <property name="color">#FFFFFF</property>
+                                        <property name="textLineThrough">none</property>
+                                        <property name="textOverline">none</property>
+                                        <property name="textUnderline">none</property>
+                                        <property name="borderBottomColor">black</property>
+                                        <property name="borderBottomStyle">none</property>
+                                        <property name="borderBottomWidth">medium</property>
+                                        <property name="borderLeftColor">black</property>
+                                        <property name="borderLeftStyle">none</property>
+                                        <property name="borderLeftWidth">medium</property>
+                                        <property name="borderRightColor">black</property>
+                                        <property name="borderRightStyle">none</property>
+                                        <property name="borderRightWidth">medium</property>
+                                        <property name="borderTopColor">black</property>
+                                        <property name="borderTopStyle">none</property>
+                                        <property name="borderTopWidth">medium</property>
+                                        <property name="marginTop">0pt</property>
+                                        <property name="marginLeft">0pt</property>
+                                        <property name="marginBottom">0pt</property>
+                                        <property name="marginRight">0pt</property>
+                                        <property name="paddingTop">1pt</property>
+                                        <property name="paddingLeft">1pt</property>
+                                        <property name="paddingBottom">1pt</property>
+                                        <property name="paddingRight">1pt</property>
+                                        <property name="textAlign">center</property>
+                                        <property name="letterSpacing">normal</property>
+                                        <property name="lineHeight">normal</property>
+                                        <property name="orphans">2</property>
+                                        <property name="textTransform">none</property>
+                                        <property name="whiteSpace">normal</property>
+                                        <property name="widows">2</property>
+                                        <property name="wordSpacing">normal</property>
+                                        <property name="display">block</property>
+                                        <property name="pageBreakAfter">auto</property>
+                                        <property name="pageBreakBefore">auto</property>
+                                        <property name="pageBreakInside">auto</property>
+                                        <property name="showIfBlank">false</property>
+                                        <property name="canShrink">false</property>
+                                        <property name="overflow">hidden</property>
+                                        <text-property name="text" key="DataExec">Execution date</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="2688">
+                                    <property name="backgroundColor">#00006A</property>
+                                    <property name="borderBottomColor">#FFFFFF</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">2px</property>
+                                    <property name="borderLeftColor">#FFFFFF</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">2px</property>
+                                    <property name="borderRightColor">#FFFFFF</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">2px</property>
+                                    <property name="borderTopColor">#FFFFFF</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">2px</property>
+                                    <label id="2689">
+                                        <property name="backgroundAttachment">scroll</property>
+                                        <property name="backgroundColor">#00006A</property>
+                                        <property name="backgroundPositionX">0%</property>
+                                        <property name="backgroundPositionY">0%</property>
+                                        <property name="backgroundRepeat">repeat</property>
+                                        <property name="fontFamily">"Calibri"</property>
+                                        <property name="fontSize">11pt</property>
+                                        <property name="fontWeight">bold</property>
+                                        <property name="fontStyle">normal</property>
+                                        <property name="fontVariant">normal</property>
+                                        <property name="color">#FFFFFF</property>
+                                        <property name="textLineThrough">none</property>
+                                        <property name="textOverline">none</property>
+                                        <property name="textUnderline">none</property>
+                                        <property name="borderBottomColor">black</property>
+                                        <property name="borderBottomStyle">none</property>
+                                        <property name="borderBottomWidth">medium</property>
+                                        <property name="borderLeftColor">black</property>
+                                        <property name="borderLeftStyle">none</property>
+                                        <property name="borderLeftWidth">medium</property>
+                                        <property name="borderRightColor">black</property>
+                                        <property name="borderRightStyle">none</property>
+                                        <property name="borderRightWidth">medium</property>
+                                        <property name="borderTopColor">black</property>
+                                        <property name="borderTopStyle">none</property>
+                                        <property name="borderTopWidth">medium</property>
+                                        <property name="marginTop">0pt</property>
+                                        <property name="marginLeft">0pt</property>
+                                        <property name="marginBottom">0pt</property>
+                                        <property name="marginRight">0pt</property>
+                                        <property name="paddingTop">1pt</property>
+                                        <property name="paddingLeft">1pt</property>
+                                        <property name="paddingBottom">1pt</property>
+                                        <property name="paddingRight">1pt</property>
+                                        <property name="textAlign">center</property>
+                                        <property name="letterSpacing">normal</property>
+                                        <property name="lineHeight">normal</property>
+                                        <property name="orphans">2</property>
+                                        <property name="textTransform">none</property>
+                                        <property name="whiteSpace">normal</property>
+                                        <property name="widows">2</property>
+                                        <property name="wordSpacing">normal</property>
+                                        <property name="display">block</property>
+                                        <property name="pageBreakAfter">auto</property>
+                                        <property name="pageBreakBefore">auto</property>
+                                        <property name="pageBreakInside">auto</property>
+                                        <property name="showIfBlank">false</property>
+                                        <property name="canShrink">false</property>
+                                        <property name="overflow">hidden</property>
+                                        <text-property name="text" key="TimeExec">Execution time</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="2690">
+                                    <property name="backgroundColor">#00006A</property>
+                                    <property name="borderBottomColor">#FFFFFF</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">2px</property>
+                                    <property name="borderLeftColor">#FFFFFF</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">2px</property>
+                                    <property name="borderRightColor">#FFFFFF</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">2px</property>
+                                    <property name="borderTopColor">#FFFFFF</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">2px</property>
+                                    <label id="2753">
+                                        <property name="backgroundAttachment">scroll</property>
+                                        <property name="backgroundColor">#00006A</property>
+                                        <property name="backgroundPositionX">0%</property>
+                                        <property name="backgroundPositionY">0%</property>
+                                        <property name="backgroundRepeat">repeat</property>
+                                        <property name="fontFamily">"Calibri"</property>
+                                        <property name="fontSize">11pt</property>
+                                        <property name="fontWeight">bold</property>
+                                        <property name="fontStyle">normal</property>
+                                        <property name="fontVariant">normal</property>
+                                        <property name="color">#FFFFFF</property>
+                                        <property name="textLineThrough">none</property>
+                                        <property name="textOverline">none</property>
+                                        <property name="textUnderline">none</property>
+                                        <property name="borderBottomColor">black</property>
+                                        <property name="borderBottomStyle">none</property>
+                                        <property name="borderBottomWidth">medium</property>
+                                        <property name="borderLeftColor">black</property>
+                                        <property name="borderLeftStyle">none</property>
+                                        <property name="borderLeftWidth">medium</property>
+                                        <property name="borderRightColor">black</property>
+                                        <property name="borderRightStyle">none</property>
+                                        <property name="borderRightWidth">medium</property>
+                                        <property name="borderTopColor">black</property>
+                                        <property name="borderTopStyle">none</property>
+                                        <property name="borderTopWidth">medium</property>
+                                        <property name="marginTop">0pt</property>
+                                        <property name="marginLeft">0pt</property>
+                                        <property name="marginBottom">0pt</property>
+                                        <property name="marginRight">0pt</property>
+                                        <property name="paddingTop">1pt</property>
+                                        <property name="paddingLeft">1pt</property>
+                                        <property name="paddingBottom">1pt</property>
+                                        <property name="paddingRight">1pt</property>
+                                        <property name="textAlign">center</property>
+                                        <property name="letterSpacing">normal</property>
+                                        <property name="lineHeight">normal</property>
+                                        <property name="orphans">2</property>
+                                        <property name="textTransform">none</property>
+                                        <property name="whiteSpace">normal</property>
+                                        <property name="widows">2</property>
+                                        <property name="wordSpacing">normal</property>
+                                        <property name="display">block</property>
+                                        <property name="pageBreakAfter">auto</property>
+                                        <property name="pageBreakBefore">auto</property>
+                                        <property name="pageBreakInside">auto</property>
+                                        <property name="showIfBlank">false</property>
+                                        <property name="canShrink">false</property>
+                                        <property name="overflow">hidden</property>
+                                        <text-property name="text" key="Parameters">Parameters</text-property>
+                                    </label>
+                                </cell>
+                            </row>
+                        </header>
+                        <detail>
+                            <row id="2698">
+                                <list-property name="highlightRules">
+                                    <structure>
+                                        <property name="operator">eq</property>
+                                        <property name="backgroundColor">#E8E8FF</property>
+                                        <property name="fontSize">10pt</property>
+                                        <expression name="testExpr" type="javascript">row.__rownum%2</expression>
+                                        <simple-property-list name="value1">
+                                            <value type="javascript">1</value>
+                                        </simple-property-list>
+                                    </structure>
+                                </list-property>
+                                <cell id="2701">
+                                    <data id="2756">
+                                        <property name="textAlign">center</property>
+                                        <property name="whiteSpace">nowrap</property>
+                                        <property name="resultSetColumn">USERNAME</property>
+                                    </data>
+                                </cell>
+                                <cell id="2703">
+                                    <data id="2757">
+                                        <property name="textAlign">center</property>
+                                        <property name="whiteSpace">nowrap</property>
+                                        <property name="resultSetColumn">EXECDATA</property>
+                                    </data>
+                                </cell>
+                                <cell id="2705">
+                                    <data id="2758">
+                                        <structure name="numberFormat">
+                                            <property name="category">Custom</property>
+                                            <property name="pattern">0s</property>
+                                        </structure>
+                                        <property name="textAlign">center</property>
+                                        <property name="whiteSpace">nowrap</property>
+                                        <property name="resultSetColumn">EXECTIME</property>
+                                    </data>
+                                </cell>
+                                <cell id="2707">
+                                    <label id="2754">
+                                        <property name="textAlign">center</property>
+                                        <text-property name="text">Parameters</text-property>
+                                        <list-property name="action">
+                                            <structure>
+                                                <property name="linkType">hyperlink</property>
+                                                <property name="toolTip">Parameters</property>
+                                                <expression name="uri" type="javascript">"javascript:parent.execCrossNavigation(this.name,'Parameters','DataFrom="+row["EXECDATA"]+"&amp;UserName="+row["USERNAME"]+"&amp;DocLabel="+row["DOCNAME"]+"&amp;IDExec="+row["ID"]+"','','Parameters');"</expression>
+                                                <property name="targetWindow">_self</property>
+                                            </structure>
+                                        </list-property>
+                                    </label>
+                                </cell>
+                            </row>
+                        </detail>
+                        <footer>
+                            <row id="2715">
+                                <cell id="2717"/>
+                                <cell id="2718"/>
+                                <cell id="2719"/>
+                                <cell id="2720"/>
+                            </row>
+                        </footer>
+                    </table>
+                </cell>
+                <cell id="2752"/>
+            </row>
+        </grid>
+    </body>
+</report>
