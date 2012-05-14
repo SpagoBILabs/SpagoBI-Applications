@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.22" id="1">
+    <list-property name="configVars">
+        <structure>
+            <property name="name">__isnull_2587_0</property>
+            <property name="value">UserName_2587</property>
+        </structure>
+        <structure>
+            <property name="name">UserName_2587_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_2239_1</property>
+            <property name="value">connectionName_2239</property>
+        </structure>
+        <structure>
+            <property name="name">connectionName_2239_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_2758_2</property>
+            <property name="value">DataFrom_2758</property>
+        </structure>
+        <structure>
+            <property name="name">DataFrom_2758_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_3022_3</property>
+            <property name="value">DocLabel_3022</property>
+        </structure>
+        <structure>
+            <property name="name">DocLabel_3022_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__IDExec_3025_4</property>
+            <property name="value">1020</property>
+        </structure>
+        <structure>
+            <property name="name">IDExec_3025_5</property>
+            <property name="value">1020</property>
+        </structure>
+        <structure>
+            <property name="name">IDExec_3025_type_</property>
+            <property name="value">string</property>
+        </structure>
+    </list-property>
+</report>
