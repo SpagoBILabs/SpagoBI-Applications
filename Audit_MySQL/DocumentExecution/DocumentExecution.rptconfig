@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.22" id="1">
+    <list-property name="configVars">
+        <structure>
+            <property name="name">__isdisplay__DataFrom_2585_0</property>
+            <property name="value">01/04/2012</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__DataTo_2586_1</property>
+            <property name="value">02/05/2012</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_2587_2</property>
+            <property name="value">UserName_2587</property>
+        </structure>
+        <structure>
+            <property name="name">UserName_2587_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_2588_3</property>
+            <property name="value">DocumentType_2588</property>
+        </structure>
+        <structure>
+            <property name="name">DocumentType_2588_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__DocumentName_2589_4</property>
+            <property name="value">Report with parameters</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_2239_5</property>
+            <property name="value">connectionName_2239</property>
+        </structure>
+        <structure>
+            <property name="name">connectionName_2239_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">DocumentName_2589_6</property>
+            <property name="value">Report with parameters</property>
+        </structure>
+        <structure>
+            <property name="name">DocumentName_2589_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">DataFrom_2585_7</property>
+            <property name="value">01/04/2012</property>
+        </structure>
+        <structure>
+            <property name="name">DataFrom_2585_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">DataTo_2586_8</property>
+            <property name="value">02/05/2012</property>
+        </structure>
+        <structure>
+            <property name="name">DataTo_2586_type_</property>
+            <property name="value">string</property>
+        </structure>
+    </list-property>
+</report>
