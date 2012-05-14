@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.22" id="1">
+    <list-property name="configVars">
+        <structure>
+            <property name="name">__isdisplay__DataFrom_2585_0</property>
+            <property name="value">01/05/2012</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__UserName_2587_1</property>
+            <property name="value">biadmin</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_2588_2</property>
+            <property name="value">DocumentType_2588</property>
+        </structure>
+        <structure>
+            <property name="name">DocumentType_2588_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_2589_3</property>
+            <property name="value">DocumentName_2589</property>
+        </structure>
+        <structure>
+            <property name="name">DocumentName_2589_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_2239_4</property>
+            <property name="value">connectionName_2239</property>
+        </structure>
+        <structure>
+            <property name="name">connectionName_2239_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__DataTo_2586_5</property>
+            <property name="value">10/05/2012</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_2759_6</property>
+            <property name="value">ParName_2759</property>
+        </structure>
+        <structure>
+            <property name="name">ParName_2759_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_2760_7</property>
+            <property name="value">ParValue_2760</property>
+        </structure>
+        <structure>
+            <property name="name">ParValue_2760_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">UserName_2587_8</property>
+            <property name="value">biadmin</property>
+        </structure>
+        <structure>
+            <property name="name">UserName_2587_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">DataFrom_2585_9</property>
+            <property name="value">01/05/2012</property>
+        </structure>
+        <structure>
+            <property name="name">DataFrom_2585_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">DataTo_2586_10</property>
+            <property name="value">10/05/2012</property>
+        </structure>
+        <structure>
+            <property name="name">DataTo_2586_type_</property>
+            <property name="value">string</property>
+        </structure>
+    </list-property>
+</report>
